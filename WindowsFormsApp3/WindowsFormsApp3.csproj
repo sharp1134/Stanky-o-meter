@@ -1,0 +1,272 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{6DDCF453-7BBD-4A96-A018-053D3D9FB78B}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <RootNamespace>WindowsFormsApp3</RootNamespace>
+    <AssemblyName>Stanky-o-meter</AssemblyName>
+    <TargetFrameworkVersion>v4.6.1</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <Deterministic>true</Deterministic>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ApplicationIcon>Untitled-1.ico</ApplicationIcon>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="AForge, Version=2.2.5.0, Culture=neutral, PublicKeyToken=c1db6ff4eaa06aeb, processorArchitecture=MSIL">
+      <HintPath>..\packages\AForge.2.2.5\lib\AForge.dll</HintPath>
+    </Reference>
+    <Reference Include="AForge.Video, Version=2.2.5.0, Culture=neutral, PublicKeyToken=cbfb6e07d173c401, processorArchitecture=MSIL">
+      <HintPath>..\packages\AForge.Video.2.2.5\lib\AForge.Video.dll</HintPath>
+    </Reference>
+    <Reference Include="AForge.Video.DirectShow, Version=2.2.5.0, Culture=neutral, PublicKeyToken=61ea4348d43881b7, processorArchitecture=MSIL">
+      <HintPath>..\packages\AForge.Video.DirectShow.2.2.5\lib\AForge.Video.DirectShow.dll</HintPath>
+    </Reference>
+    <Reference Include="MetroSet UI, Version=2.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\MetroSet_UI.2.0.0\lib\net45\MetroSet UI.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Design" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="app10.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="app10.Designer.cs">
+      <DependentUpon>app10.cs</DependentUpon>
+    </Compile>
+    <Compile Include="app20.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="app20.Designer.cs">
+      <DependentUpon>app20.cs</DependentUpon>
+    </Compile>
+    <Compile Include="app30.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="app30.Designer.cs">
+      <DependentUpon>app30.cs</DependentUpon>
+    </Compile>
+    <Compile Include="app40.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="app40.Designer.cs">
+      <DependentUpon>app40.cs</DependentUpon>
+    </Compile>
+    <Compile Include="app50.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="app50.Designer.cs">
+      <DependentUpon>app50.cs</DependentUpon>
+    </Compile>
+    <Compile Include="app60.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="app60.Designer.cs">
+      <DependentUpon>app60.cs</DependentUpon>
+    </Compile>
+    <Compile Include="chart.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="chart.Designer.cs">
+      <DependentUpon>chart.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Form1.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form1.Designer.cs">
+      <DependentUpon>Form1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="fourscore.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="fourscore.Designer.cs">
+      <DependentUpon>fourscore.cs</DependentUpon>
+    </Compile>
+    <Compile Include="millynext.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="millynext.Designer.cs">
+      <DependentUpon>millynext.cs</DependentUpon>
+    </Compile>
+    <Compile Include="next.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="next.Designer.cs">
+      <DependentUpon>next.cs</DependentUpon>
+    </Compile>
+    <Compile Include="onescore.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="onescore.Designer.cs">
+      <DependentUpon>onescore.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="selector.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="selector.Designer.cs">
+      <DependentUpon>selector.cs</DependentUpon>
+    </Compile>
+    <Compile Include="stankynext.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="stankynext.Designer.cs">
+      <DependentUpon>stankynext.cs</DependentUpon>
+    </Compile>
+    <Compile Include="threescore.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="threescore.Designer.cs">
+      <DependentUpon>threescore.cs</DependentUpon>
+    </Compile>
+    <Compile Include="twoscore.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="twoscore.Designer.cs">
+      <DependentUpon>twoscore.cs</DependentUpon>
+    </Compile>
+    <Compile Include="whipnext.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="whipnext.Designer.cs">
+      <DependentUpon>whipnext.cs</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="app10.resx">
+      <DependentUpon>app10.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="app20.resx">
+      <DependentUpon>app20.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="app30.resx">
+      <DependentUpon>app30.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="app40.resx">
+      <DependentUpon>app40.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="app50.resx">
+      <DependentUpon>app50.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="app60.resx">
+      <DependentUpon>app60.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="chart.resx">
+      <DependentUpon>chart.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form1.resx">
+      <DependentUpon>Form1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="fourscore.resx">
+      <DependentUpon>fourscore.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="millynext.resx">
+      <DependentUpon>millynext.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="next.resx">
+      <DependentUpon>next.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="onescore.resx">
+      <DependentUpon>onescore.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <EmbeddedResource Include="selector.resx">
+      <DependentUpon>selector.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="stankynext.resx">
+      <DependentUpon>stankynext.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="threescore.resx">
+      <DependentUpon>threescore.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="twoscore.resx">
+      <DependentUpon>twoscore.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="whipnext.resx">
+      <DependentUpon>whipnext.cs</DependentUpon>
+    </EmbeddedResource>
+    <None Include="packages.config" />
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\tenor.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\source.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\l7WPM2.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\PersonalJadedIchthyosaurs-size_restricted.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\35Sq.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\dd3768da52ef633d294a1e752be1ef4a_w200.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\giphy.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\200.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Untitled-1.ico" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>
